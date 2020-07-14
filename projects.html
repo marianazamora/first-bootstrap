@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<meta name="description" content="Mariana Perez Porfolio">
+
+	<!--Responsive meta tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!--Stylesheet and Fonts-->
+	<link rel="stylesheet" type="text/css" href="styles/styleglobal.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!--Font Awesome 5-->
+	<script src="https://kit.fontawesome.com/b0df2f6a69.js" crossorigin="anonymous"></script>
+
+	<title>Welcome to my website!</title>
+</head>
+
+<body>
+	<div class="main-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<!--Navigation Bar-->
+		<header class="masthead mb-auto text-center pt-3">
+			<div class="inner">
+				<h3 class="masthead-brand">Mariana Perez</h3>
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="skills.html">Skills</a>
+					<a class="nav-link active" href="projects.html">Projects</a>
+					<a class="nav-link" href="gallery.html">Gallery</a>
+					<a class="nav-link" href="contact.html">Contact</a>
+					<a class="nav-link" href="documentation.html">Documentation</a>
+				</nav>
+			</div>
+		</header>
+
+		<!--Main content in the website-->
+		<main role="main" class="inner cover row m-3" >
+
+		<div class="row pt-5">
+			<div class="col-sm">
+				<h3 class="pl-3"> Projects </h3>
+				<div class="tagscontainer">
+					<div> HTML </div> 
+					<div> CSS </div>
+					<div> Javascript </div>
+					<div> Python </div>
+					<div> UX </div>
+				</div>
+			</div>
+		</div>
+
+		<!--Projects-->
+		<div class="row pt-3">
+			<div class="col-sm">
+				<div class="card bg-dark m-2" stlye="width:18rem;" onmouseover="bannermouse()" onmouseout="bannermouseout()">
+					<a class="firstproject" href="https://allaboutnavbars.netlify.app">
+						<img class="card-img-top" src="images/project1.png" alt="Description of project">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Static Website</h5>
+						<p class="card-text">First fully static website that I created. It's a website that has tutorials on how to create different navigation bars.</p>
+						<br>
+						<a href="https://github.com/marianazamora/allaboutnavbars">
+						<img src="images/GitHub-Mark-Light-32px.png" class="img-fluid" alt="Github Link"></a> <span id="bannerpop"  class="badge badge-pill badge-info float-right">Click the image to visit the website</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card bg-dark m-2" stlye="width:18rem;">
+					<img class="card-img-top" src="images/coding3.png" alt="Description of project">
+					<div class="card-body">
+						<h5 class="card-title">To Do List</h5>
+						<p class="card-text"> Card text </p>
+						<a href="https://github.com/marianazamora"><img src="images/GitHub-Mark-Light-32px.png" class="img-fluid" alt="Github Link"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row pt-3">
+			<div class="col-sm">
+				<div class="card bg-dark m-2" stlye="width:18rem;">
+					<img class="card-img-top" src="images/coding.png" alt="Description of project">
+					<div class="card-body">
+						<h5 class="card-title">Landing Page </h5>
+						<p class="card-text"> Card text </p>	
+						<a href="https://github.com/marianazamora">
+						<img src="images/GitHub-Mark-Light-32px.png" class="img-fluid" alt="Github Link"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>
+
+		<!--Website footer-->
+		<footer class="mastfoot mt-auto text-center p-3">
+			<div class="inner">
+			<p id="ftr-date"></p>
+			</div>
+		</footer>
+	</div>
+	
+	<!--Scroll bar button-->
+	<button onclick="scrollup()" type="button" id="to-the-top" class="btn btn-lg btn-light rounded-circle"><i class="fas fa-angle-up fa-2x"></i></button>
+
+	<!--Javascript-->
+	<script type="text/javascript" src="js/projects_javascript.js"></script>
+</body>
+</html>

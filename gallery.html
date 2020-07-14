@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<meta name="description" content="Mariana Perez Porfolio">
+
+	<!--Responsive meta tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!--Stylesheet for Website, gallery and fonts-->
+	<link rel="stylesheet" type="text/css" href="styles/styleglobal.css">
+	<link rel="stylesheet" type="text/css" href="styles/simple-slideshow-styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!--Font Awesome 5-->
+	<script src="https://kit.fontawesome.com/b0df2f6a69.js" crossorigin="anonymous"></script>
+
+	<!--Hammer JS-->
+	<script type="text/javascript" src="js/hammer.js"></script>
+
+
+	<title>Welcome to my website!</title>
+</head>
+
+<body>
+	<div class="main-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<!--Navigation Bar-->
+		<header class="masthead mb-auto text-center pt-3">
+			<div class="inner">
+				<h3 class="masthead-brand">Mariana Perez</h3>
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="skills.html">Skills</a>
+					<a class="nav-link" href="projects.html">Projects</a>
+					<a class="nav-link active" href="gallery.html">Gallery</a>
+					<a class="nav-link" href="contact.html">Contact</a>
+					<a class="nav-link" href="documentation.html">Documentation</a>
+				</nav>
+			</div>
+		</header>
+
+		<!--Main content in the website-->	
+		<main role="main" class="inner cover m-3" >
+			<div class="row justify-content-center">
+			<div class="col-md-8">
+				<h3>Gallery</h3>
+			</div>
+			</div>
+			<!--Gallery-->
+			<div class="row justify-content-center">
+				<div class="col-md-8 ">
+					<div class="betterslideshow bss-slides m-2" tabindex="2" autofocus="autofocus"> 
+						<figure>
+							<img src="images/gallery-1.jpg" width="100%" alt="Image in gallery"/>
+							<figcaption>Lake Näsijärvi in Finland.</figcaption> 
+						</figure>
+						<figure>
+							<img src="images/gallery-2.jpg" width="100%" alt="Image in gallery" />
+							<figcaption>One of my hobbies is playing D&D.</figcaption>
+						</figure>
+						<figure>
+							<img src="images/gallery-3.jpg" width="100%" alt="Image in gallery" />
+							<figcaption>Walking in the forest is a good way to relax.</figcaption> 
+						</figure>
+						<figure>
+							<img src="images/gallery-4.jpg" width="100%" alt="Image in gallery" />
+							<figcaption>Close up shot of the lake.</figcaption> 
+						</figure>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<!--Website footer-->
+		<footer class="mastfoot mt-auto text-center">
+			<div class="inner">
+				<p id="ftr-date"></p>
+			</div>
+		</footer>
+	</div>
+
+	<!--Scroll bar button-->
+	<button onclick="scrollup()" type="button" id="to-the-top" class="btn btn-lg btn-light rounded-circle"><i class="fas fa-angle-up fa-2x"></i></button>
+
+	<!--Javascript Personal and Slideshow-->
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script type="text/javascript" src="js/better-simple-slideshow.js"></script>
+
+</body>
+</html>

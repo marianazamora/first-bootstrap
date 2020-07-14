@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<meta name="description" content="Mariana Perez Porfolio">
+
+	<!--Responsive meta tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!--Stylesheet and Fonts-->
+	<link rel="stylesheet" type="text/css" href="styles/styleglobal.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!--Font Awesome 5-->
+	<script src="https://kit.fontawesome.com/b0df2f6a69.js" crossorigin="anonymous"></script>
+
+	<title>Welcome to my website!</title>
+</head>
+
+<body>
+	<div class="main-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<!--Navigation Bar-->
+		<header class="masthead mb-auto text-center pt-3">
+			<div class="inner">
+				<h3 class="masthead-brand">Mariana Perez</h3>
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="skills.html">Skills</a>
+					<a class="nav-link" href="projects.html">Projects</a>
+					<a class="nav-link" href="gallery.html">Gallery</a>
+					<a class="nav-link active" href="contact.html">Contact</a>
+					<a class="nav-link" href="documentation.html">Documentation</a>
+				</nav>
+			</div>
+		</header>
+
+		<!--Main content in the website-->
+		<main role="main" class="inner cover m-3">
+
+			<div class="row justify-content-center">
+				<form onsubmit="return submitform()" action="" method="post" class="col-md-8 card bg-dark p-4 mt-3 mb-3 was-validated">
+					<h3> Contact Form </h3>
+					<p> Fill out the contact form and I will get in touch with you.</p>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputName">Name</label>
+							<input type="text" class="form-control" id="name" placeholder="First name" maxlength="25" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputLastname">Last Name</label>
+							<input type="text" class="form-control" id="lastname" placeholder="Last name" maxlength="25" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputGender">Gender</label>
+							<select id="gender" class="form-control" required>
+								<option value="" selected>Select an option</option>
+								<option value="Female">Female</option>
+								<option value="Male">Male</option>
+								<option value="Other">Other</option>
+								<option value="Prefer not to say">Prefer not to say</option>
+							</select>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputAge">Age</label>
+							<input type="number" class="form-control" id="age" min="18" max="100"placeholder="Age" required>
+						</div>
+					</div>
+						<div class="form-group">
+							<label for="inputEmail">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="name@example.com" maxlength="50" required>
+						</div>
+						<div class="form-group">
+							<label for="inputWebsite">Website</label>
+							<input type="text" class="form-control" id="website" placeholder="www.example.com" maxlength="50" required>
+						</div>
+						<div class="form-group">
+							<label for="inputComment">Leave your comment</label>
+							<textarea class="form-control" id="comment" rows="3" maxlength="255" required></textarea>
+						</div>
+					<div class="btn-group-toggle" data-toggle="buttons">
+						<a onclick="resetfunction()" class="btn btn-secondary float-left text-body">Reset</a>
+						<button type="submit" class="btn btn-primary float-right">Submit</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="row justify-content-center" id="resultlocation">
+				<div class="col-md-8 card bg-dark p-4 mt-3 mb-3">
+					<p id="formresults"> Your Results will appear here</p>
+				</div>
+			</div>
+		</main>
+
+		<!--Website footer-->
+		<footer class="mastfoot mt-auto text-center">
+			<div class="inner">
+				<p id="ftr-date"></p>
+			</div>
+		</footer>
+	</div>
+
+	<!--Scroll bar button-->
+	<button onclick="scrollup()" type="button" id="to-the-top" class="btn btn-lg btn-light rounded-circle"><i class="fas fa-angle-up fa-2x"></i></button>
+
+	<!--Javascript-->
+	<script type="text/javascript" src="js/contact_javascript.js"></script>
+
+</body>
+</html>

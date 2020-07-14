@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<meta name="description" content="Mariana Perez Porfolio">
+
+	<!--Responsive meta tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!--Stylesheet and Fonts-->
+	<link rel="stylesheet" type="text/css" href="styles/styleglobal.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!--Font Awesome 5-->
+	<script src="https://kit.fontawesome.com/b0df2f6a69.js" crossorigin="anonymous"></script>
+
+	<title>Welcome to my website!</title>
+</head>
+
+<body>
+	<div class="main-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<!--Navigation Bar-->
+		<header class="masthead mb-auto text-center pt-3">
+			<div class="inner">
+				<h3 class="masthead-brand">Mariana Perez</h3>
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="skills.html">Skills</a>
+					<a class="nav-link" href="projects.html">Projects</a>
+					<a class="nav-link" href="gallery.html">Gallery</a>
+					<a class="nav-link" href="contact.html">Contact</a>
+					<a class="nav-link active" href="documentation.html">Documentation</a>
+				</nav>
+			</div>
+		</header>
+
+		<!--Main content in the website-->
+		<main role="main" class="inner cover m-3" >
+			<h3>Website Documentation</h3>
+			<div class="infocontainer p-2">
+				<p> After going through the website, you may be wondering how I built it. This page was created to contain the resources and challenges faced while building the website.</p>
+				<h5>Resources</h5>
+				<ul>
+					<li>CSS Framework – Bootstrap</li>
+					<li>Base template – <a href="https://getbootstrap.com/docs/4.0/examples/cover/"> Cover from Bootstrap</a></li>
+					<li>Fonts – Google and Font Awesome 5 for icons</li>
+					<li>W3Schools – Guides for HTML, CSS and Javascript</li>
+					<li>Stackoverflow – Finding related questions</li>
+					<li><a href="https://uigradients.com/#RainbowBlue">UI gradient</a></li>
+				</ul>
+				<h5>Index Page</h5>
+				<p>While creating the index page I learned about styling and layout with bootstrap.</p>
+				<ul>
+					<li><a href="https://getbootstrap.com/docs/4.5/content/images/">Learned about responsive images that would decrease in size when using mobile.</a></li>
+					<li><a href="https://getbootstrap.com/docs/4.5/layout/grid/">Learned how to set up layout using bootstrap.</a></li>
+					<li><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp">Learned how to style the date and time.</a></li>
+					<li><a href="https://www.w3schools.com/css/css3_gradients.asp">Learned how to set gradients in different elements.</a></li>
+				</ul>
+				<h5>Skills Page</h5>
+				<p>This section was more complex due to the javascript code. Creating the text and buttons was simple at this point.</p>
+				<ul>
+					<li> <a href="https://www.w3schools.com/tags/att_a_download.asp">Learned about download attribute for the CV buttons.</a></li>
+					<li><a href="https://getbootstrap.com/docs/4.5/components/input-group/">Learned about input elements in bootstrap for the skills list.</a></li>
+				</ul>
+				<h6>Process for Skill List</h6>
+				<p>I decided that the method I would use for adding and deleting skills would be through an array. The function works by parsing through the items in an array and creating div elements for each one of them. Underneath the list there is an input box where the user can add a new skill. If a new skill is added the script deletes the last item of the array and adds the new item to the beginning of the array. It then removes all the div elements (removechild()) and iterates the new array.</p>
+				<ol>
+					<li><a href="https://www.w3schools.com/js/js_arrays.asp">First, I had to learn about arrays in javascript, including editing the array through pop and unshift.</a></li>
+					<li><a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_text_value2">I learned how to obtain the value from the input box and add it to the array.</a></li>
+					<li><a href="https://stackoverflow.com/questions/7174265/reset-textbox-value-in-javascript/7174292">Then realized the characters would stay in the same box and searched how to reset the value.</a></li>
+					<li>Once I could edit the array and pull the information from the input box I had to learn how to show every item of the array in HTML. <a href="https://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript">First I thought about using for i in array but after searching in stackoverflow I learned that forEach method was better.</a></li>
+					<li><a href="https://dmitripavlutin.com/foreach-iterate-array-javascript/">I followed this example about iterating with the forEach method</a></li>
+					<li>If I tested the function in console.log it would show all the items in the array correctly in their own line, however, when I edited the inner html of a div element it would just show the last item from the array. I thought that my iteration had to also create new div elements for every item in the array. <a href="https://stackoverflow.com/questions/5886144/create-divs-from-array-elements">Therefore, I searched how to create new div elements from an array (second answer “updated answer using forEach”).</a></li>
+				</ol>
+				<h5>Projects Page</h5>
+				<p>For the projects page I decided to use bootstrap’s component cards to showcase each project. As part of the task, I also wrote some javascript code for actions during onload, onscroll and mouseover.</p>
+				<ul>
+					<li><a href="https://getbootstrap.com/docs/4.5/components/card/">Bootstrap cards.</a></li>
+				</ul>
+				<h6>Process for onload</h6>
+				<p>For onload I decided to go for something simple and print in console.log once the page was fully loaded.</p>
+				<h6>Process for onscroll</h6>
+				<p>Something useful I wanted to add was a button that would take the user to the top of the page if they scrolled down.</p>
+				<ul>
+					<li><a href=" https://www.w3schools.com/howto/howto_js_scroll_to_top.asp">Tutorial by w3schools</a></li>
+					<li>After testing it on the projects page, I added this feature to all pages specially for mobile. In addition, I styled scrolling to behave smoothly when it scrolls to the top.</li>
+				</ul>
+				<h6>Process for onmouseover/onmouseout</h6>
+				<p>The first project will show a badge if the user scrolls over and it will disappear if the user scrolls out. Badges are non-intrusive and it's a way to highlight small information.</p>
+				<ul>
+					<li><a href="https://stackoverflow.com/questions/25209834/trying-to-make-a-div-disappear-with-javascript">The functions edit the visibility of the badge element. If the mouse is on the card the element is visible, if the mouse if out of the card the badge is hidden.</a></li>
+					<li><a href="https://getbootstrap.com/docs/4.5/components/badge/#pill-badges">I learned about badges in bootstrap.</a></li>
+					<li><a href="https://www.w3schools.com/cssref/pr_class_visibility.asp">I learned about the visibility property.</a></li>
+				</ul>
+				<h5>Gallery Page</h5>
+				<p>For the gallery I followed the tutorial provided by the task. Included HammerJS library for swiping in mobile. The first issue I had was going into full-screen, however this <a href="https://github.com/leemark/better-simple-slideshow/issues/15">issue was solved with issues resolved in Github.</a></p>
+				<h5>Contact Page</h5>
+				<p>The form was when I realized the benefits of backend code, example php and sql. Although I didn't use this code for this task, I will certainly be trying it in my next project. For this task I created the functionalities of the form without storing the data. Basically, I told the computer to read the values from the input fields, return the values into the bottom of the page and delete the values from the form. This resembles a form, however, to work correctly in real-case scenario it would need backend code.</p>
+				<h6>Process for contact form</h6>
+				<ol>
+					<li><a href="https://getbootstrap.com/docs/4.0/components/forms/">I created the form following the guide by bootstrap.</a></li>
+					<li><a href="https://getbootstrap.com/docs/4.0/components/forms/#validation">I learned how validation works in bootstrap.</a></li>
+					<li>Similar to the skill list feature, I created javascript code that would take the value from the input fields and would return the value to a specific location.</li>
+				</ol>
+				<h5>Documentation Page</h5>
+				<p>For the final page I created a documentation page that would host all the resources and challenges of this project. I thought this would allow me to practice my basic html skills and also allow the user to read this information without having to access/download another file.</p>
+			</div>
+		</main>
+
+		<!--Website footer-->
+		<footer class="mastfoot mt-auto text-center">
+			<div class="inner">
+				<p id="ftr-date"></p>
+			</div>
+		</footer>
+	</div>
+
+	<!--Scroll bar button-->
+	<button onclick="scrollup()" type="button" id="to-the-top" class="btn btn-lg btn-light rounded-circle"><i class="fas fa-angle-up fa-2x"></i></button>
+
+	<!--Javascript-->
+	<script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+</html>
